@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+	<wb-module deploy-name="pysix">
+		<wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="asterisk-java-1.0.0.CI-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/asterisk-java/asterisk-java">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+		<property name="java-output-path" value="target/classes"/>
+        <property name="context-root" value="pysix"/>
+	</wb-module>
+</project-modules>

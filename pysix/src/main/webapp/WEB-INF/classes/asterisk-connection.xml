@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Configuraçoes de conexao ao sevidor asterisk -->
+	<bean id="asteriskConnectionBean"
+		class="com.tenacity.pysix.asterisk.connection.AsteriskConnectionBean">
+		<!-- Endereco do servidor asterisk ao qual se deve conectar -->
+		<property name="asteriskAddress"><value>127.0.0.1</value></property>
+		<!-- Porta configurada no manager.conf -->
+		<property name="managerPort"><value>5038</value></property>
+		<!-- Login do AMI configurado no manager.conf -->
+		<property name="managerLogin"><value>admin</value></property>
+		<!-- Senha login do AMI configurado no manager.conf -->
+		<property name="managerPassword"><value>@dvah*310755</value></property>
+	</bean>
+
+
+</beans>
